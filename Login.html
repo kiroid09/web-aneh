@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Homepage</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: url(purple.png) no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .overlay {
+      background: rgba(18, 18, 18, 0.7);
+      backdrop-filter: blur(10px);
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: transform 1s ease-in-out;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #EDE7F6;
+      text-align: center;
+      transition: transform 1s ease-in-out;
+    }
+
+    h3 {
+      font-size: 24px;
+      color: #CE93D8;
+      margin-bottom: 20px;
+    }
+
+    input[type="button"] {
+      background-color: #7E57C2;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    input[type="button"]:hover {
+      background-color: #9575CD;
+      transform: scale(1.05);
+    }
+
+    /* Efek zoom-in saat klik */
+    .zoom-in {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay" id="overlay"></div>
+  <div class="content" id="content">
+    <h3>Kunjungi web ini</h3>
+    <form>
+      <input type="button" value="Masuk" onclick="animateAndRedirect();">
+    </form>
+  </div>
+
+  <script>
+    function animateAndRedirect() {
+      // Menambahkan efek zoom-in
+      document.getElementById('overlay').classList.add('zoom-in');
+      document.getElementById('content').classList.add('zoom-in');
+      setTimeout(function () {
+        window.location.href = 'beranda.html';
+      }, 1000); // waktu tunggu sesuai durasi animasi zoom-in
+    }
+  </script>
+</body>
+</html>

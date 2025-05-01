@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinland Saga - Dark Mode</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #e5e5e5;
+      margin: 0;
+      padding: 0;
+      overflow-y: scroll;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      width: 100%;
+    }
+
+    .content {
+      width: 80%;
+      max-width: 1000px;
+      margin-bottom: 3rem;
+      background-color: #1e1e2f;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+      opacity: 0;
+      transform: translateY(50px);
+      animation: slideIn 1.5s ease-out forwards;
+    }
+
+    .heading {
+      font-size: 2.5rem;
+      color: #b66dff;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .story-text {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #f5f5f5;
+    }
+
+    .image-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .image-container img {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #b66dff;
+      color: #fff;
+      padding: 0.8rem 2rem;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 1.1rem;
+      cursor: pointer;
+      margin-top: 2rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #9b56e0;
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Thorfinn's Introduction -->
+    <div class="content">
+      <div class="heading">Vinland Saga: Thorfinn</div>
+      <p class="story-text">
+        Thorfinn adalah seorang pemuda Viking yang lahir di tanah yang penuh dengan peperangan dan
+        penderitaan. Sejak kecil, ia hidup dalam bayang-bayang perang, di mana sang ayah, Thors, 
+        adalah seorang prajurit hebat yang memilih untuk pensiun dan hidup damai. Namun, takdir berkata lain. 
+        Thors dibunuh oleh Askeladd, seorang pemimpin pasukan bayaran yang terkenal, dan Thorfinn 
+        pun bertekad membalas dendam. 
+      </p>
+      <div class="image-container">
+        <img src="thor.jpg" alt="Thorfinn">
+      </div>
+      <p class="story-text">
+        Thorfinn menghabiskan bertahun-tahun bertarung untuk Askeladd, menyusuri jalan kekerasan 
+        dengan harapan bisa membunuh pria itu. Namun, perjalanannya akan membawa dia jauh lebih dalam 
+        dalam dunia yang penuh pengkhianatan dan pencarian makna hidup yang lebih tinggi. 
+      </p>
+    </div>
+
+    <!-- Thors' Past -->
+    <div class="content">
+      <div class="heading">Asal Usul Thors</div>
+      <p class="story-text">
+        Thors, ayah Thorfinn, dikenal sebagai "Thors the Troll" karena kekuatan luar biasa dan 
+        keterampilannya sebagai prajurit. Namun, Thors memiliki prinsip hidup yang berbeda dari banyak 
+        prajurit Viking. Ia memilih untuk meninggalkan medan perang demi keluarganya dan menghindari 
+        kekerasan yang terus menghancurkan dirinya.
+      </p>
+      <p class="story-text">
+        Keputusan Thors untuk menghindari pertempuran membawa konsekuensi besar. Ketika Askeladd 
+        membunuhnya, Thorfinn muda pun menjadi korban dari siklus balas dendam yang tak pernah berakhir.
+      </p>
+    </div>
+
+    <!-- Thorfinn's Growth -->
+    <div class="content">
+      <div class="heading">Perjalanan Thorfinn</div>
+      <p class="story-text">
+        Seiring waktu, Thorfinn mulai menyadari bahwa dendam semata tidak akan memberi kedamaian hati. 
+        Perjalanan fisik dan emosionalnya membawanya pada pertemuan dengan berbagai karakter, termasuk 
+        Ketil dan Canute, yang memiliki pandangan dunia yang sangat berbeda. Thorfinn mulai mempertanyakan 
+        makna kehidupan yang lebih dalam daripada sekadar balas dendam.
+      </p>
+    </div>
+
+    <!-- Transition to Vinland -->
+    <div class="content">
+      <div class="heading">Vinland: Tanah Harapan</div>
+      <p class="story-text">
+        Akhirnya, Thorfinn tiba di Vinland, tanah yang diyakini bisa menjadi tempat yang damai bagi 
+        umat manusia. Meskipun pengalamannya penuh dengan pertempuran dan kematian, di sinilah ia menemukan 
+        kesempatan untuk memulai kehidupan baru. Di Vinland, Thorfinn harus memilih untuk tetap berada 
+        dalam bayang-bayang masa lalunya atau menggapai masa depan yang lebih baik.
+      </p>
+      <div class="button" onclick="window.location.reload()">Mulai Lagi</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Filosofi Ku</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jarallax@2.0.4/dist/jarallax.min.js"></script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #121212;
+      color: #e0e0e0;
+      padding: 20px;
+      scroll-behavior: smooth;
+    }
+
+    h3 {
+      color: #bb86fc;
+      font-size: 24px;
+    }
+
+    p, blockquote {
+      opacity: 0;
+      animation: fadeIn 1.2s ease forwards;
+      animation-delay: 0.2s;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    blockquote {
+      background: #1f1f1f;
+      border-left: 5px solid #bb86fc;
+      padding: 15px;
+      font-style: italic;
+      color: #bdbdbd;
+    }
+
+    img {
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    .jarallax {
+      height: 300px;
+      margin-bottom: 40px;
+    }
+
+    .jarallax img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Parallax Header -->
+  <div class="jarallax" data-jarallax data-speed="0.6">
+    <img src="rekfelsi.jpg" alt="">
+  </div>
+
+  <h3>Filosofi dan Kehidupan Ku</h3>
+
+  <p><img src="Memek.jpg" height="130px" align="left">
+    Ternyata menjadi disiplin dan konsisten itu lebih sulit dari yang aku bayangkan. Kupikir aku akan terus maju tanpa kendala — pemikiran ini salah besar. Disiplin membawa tantangan hidup yang menguras emosi dan mental. Beberapa orang pasti menyerah karena betapa sulitnya mengejar impian.
+  </p>
+
+  <p align="right"><img src="kehidupan.jpeg.jpg" height="130px" align="right">
+    Rasa hampa ini masih menyelimutiku. Tapi aku masih bertahan dari semua gangguan. Aku sebenarnya sudah hampir menyerah, tapi jiwaku masih ingin melanjutkan perjalanan ini sebagai versi terbaikku.
+  </p>
+
+  <h3>Filosofi Ku</h3>
+
+  <p><img src="filosofi.jpg" height="130px" align="left">
+    Aku menerima kenyataan bahwa hidup ini tidak selalu memberi jawaban. Tapi dari absurditas itu, aku belajar: makna bukan ditemukan, tapi diciptakan oleh langkah-langkah kecil yang jujur dan sadar.
+  </p>
+
+  <p align="right"><img src="stoik.jpg" height="130px" align="right">
+    Aku tidak ingin dikendalikan oleh hal yang di luar diriku. Seperti ajaran Stoik, aku fokus pada apa yang bisa aku kendalikan: pikiranku, tindakanku, dan bagaimana aku menanggapi hidup.
+  </p>
+
+  <p><img src="sepi.jpg" height="130px" align="left">
+    Aku tidak butuh validasi dari dunia. Media sosial, opini orang lain — semua bisa jadi ilusi. Aku lebih memilih realitas, meskipun sepi, asal jujur. Kebenaran mungkin sepi, tapi selalu setia.
+  </p>
+
+  <p align="right"><img src="sendirian.jpg" height="130px" align="right">
+    Aku tidak takut berjalan sendirian. Aku pernah takut gelap, takut sepi, takut salah jalan. Tapi sekarang aku tahu: kesendirian bukan kutukan, tapi jalan pendewasaan.
+  </p>
+
+  <p><img src="arti.jpg" height="130px" align="left">
+    Aku hidup untuk terus bertumbuh. Bukan hanya secara fisik, tapi jiwaku juga harus berkembang. Aku akan terus belajar, jatuh, bangkit, dan mencari makna baru—walaupun semuanya hanya akan menjadi kenangan suatu saat nanti.
+  </p>
+
+  <blockquote>
+    Bukan berarti laki-laki itu harus dipenuhi penderitaan. Juga ada hal yang sangat ingin dirasakan: kesenangan dan kenyamanan, ingin menangis, ingin curhat, ingin diakui. Tapi dunia berkata lain. Tidak ada yang peduli — kecuali diri sendiri.
+  </blockquote>
+
+  <script>
+    // Inisialisasi Jarallax
+    jarallax(document.querySelectorAll('.jarallax'), {
+      speed: 0.4
+    });
+  </script>
+
+</body>
+</html>

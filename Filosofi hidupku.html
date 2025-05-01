@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Filosofi Hidupku</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #3700B3;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #ffffff;
+    }
+
+    .section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 1rem;
+      gap: 2rem;
+      border-bottom: 1px solid #333;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease;
+    }
+
+    .section.reveal {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .section img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+
+    .text {
+      flex: 1;
+    }
+
+    .text h2 {
+      color: #BB86FC;
+      margin-top: 0;
+    }
+
+    .text p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Filosofi Hidupku</h1>
+
+<div class="section">
+  <img src="ok.jpg" alt="Stoikisme">
+  <div class="text">
+    <h2>Stoikisme</h2>
+    <p>
+      Aku belajar untuk tetap tenang di tengah hinaan dan fokus pada hal-hal yang bisa aku kendalikan. Prinsip ini membuatku tidak mudah goyah.
+    </p>
+  </div>
+</div>
+
+<div class="section">
+  <img src="baiklah.jpg" alt="Absurdisme">
+  <div class="text">
+    <h2>Absurdisme</h2>
+    <p>
+      Hidup mungkin tidak punya makna bawaan, tapi aku tetap memilih untuk hidup dengan keberanian dan menciptakan maknaku sendiri.
+    </p>
+  </div>
+</div>
+
+<div class="section">
+  <img src="oh.jpg" alt="Vinland Saga">
+  <div class="text">
+    <h2>Pengaruh Karya</h2>
+    <p>
+      Karya seperti *Vinland Saga*, *Berserk*, dan *The Book of Five Rings* telah membentuk cara pandangku tentang perjuangan dan kehormatan.
+    </p>
+  </div>
+</div>
+
+<div class="section">
+  <img src="oklah.jpg" alt="berolahraga">
+  <div class="text">
+    <h2>Refleksi dan Ketenteraman</h2>
+    <p>
+      saat berolahraga, aku menemukan ketenangan. Momen ini membantuku memulihkan energi dan menyadari arah hidupku.
+    </p>
+  </div>
+</div>
+
+<div class="section">
+  <img src="sadar.jpg" alt="Realitas Hidup">
+  <div class="text">
+    <h2>Penerimaan Realitas</h2>
+    <p>
+      Aku memilih realitas daripada ilusi media sosial. Bagiku, hidup yang sederhana dan jujur jauh lebih bermakna.
+    </p>
+  </div>
+</div>
+
+<script>
+  // Reveal effect saat scroll
+  const sections = document.querySelectorAll('.section');
+
+  const revealOnScroll = () => {
+    const triggerBottom = window.innerHeight * 0.85;
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      if (sectionTop < triggerBottom) {
+        section.classList.add('reveal');
+      } else {
+        section.classList.remove('reveal');
+      }
+    });
+  };
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+
+</body>
+</html>
